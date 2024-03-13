@@ -4,7 +4,7 @@ interface DrumProps {
 }
 
 const Drum = ({audioClip}: DrumProps) => {
-    const playSound = (clip: Audioclip) => {
+    const playSound = (clip: AudioClip) => {
         (document.getElementById(clip.keyTrigger) as HTMLAudioElement)
         .play()
         .catch(console.error);
